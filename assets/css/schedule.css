@@ -1,0 +1,811 @@
+@charset "UTF-8";
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GmarketSansLight";
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text], input[type=password], input[type=submit], input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "GmarketSansLight", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #fff;
+  font-weight: lighter;
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "GmarketSansLight", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#skip {
+  position: relative;
+  z-index: 3000;
+}
+#skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+#skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url(../fonts/GmarketSansTTFLight.woff) format("woff");
+}
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url(../fonts/GmarketSansTTFMedium.woff) format("woff");
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url(../fonts/GmarketSansTTFBold.woff) format("woff");
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #101010;
+}
+
+.wrap {
+  width: 100vw;
+}
+.wrap #header {
+  width: 100%;
+  height: 100px;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap #header .hd_title img {
+  width: 300px;
+}
+.wrap #header .hd_gnb ul {
+  display: flex;
+  gap: 100px;
+}
+.wrap #header .hd_gnb ul li {
+  font-size: 20px;
+}
+.wrap #header .hd_gnb ul li:hover {
+  font-family: "GmarketSansMedium";
+}
+.wrap #header .hd_gnb ul li:nth-child(3) {
+  font-family: "GmarketSansMedium";
+}
+.wrap #header .mobile_header {
+  display: none;
+}
+.wrap #main_2024,
+.wrap #main_2023,
+.wrap #main_2025 {
+  width: 100%;
+  padding: 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0 100px 0;
+}
+.wrap #main_2024 .year,
+.wrap #main_2023 .year,
+.wrap #main_2025 .year {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+.wrap #main_2024 .year h2,
+.wrap #main_2023 .year h2,
+.wrap #main_2025 .year h2 {
+  font-family: "GmarketSansBold";
+  font-size: 20px;
+}
+.wrap #main_2024 .year button,
+.wrap #main_2023 .year button,
+.wrap #main_2025 .year button {
+  color: #fff;
+}
+.wrap #main_2024 .schedule_list,
+.wrap #main_2023 .schedule_list,
+.wrap #main_2025 .schedule_list {
+  width: 100%;
+}
+.wrap #main_2024 .schedule_list table,
+.wrap #main_2023 .schedule_list table,
+.wrap #main_2025 .schedule_list table {
+  width: 100%;
+}
+.wrap #main_2024 .schedule_list table tr,
+.wrap #main_2023 .schedule_list table tr,
+.wrap #main_2025 .schedule_list table tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.wrap #main_2024 .schedule_list table tr #month,
+.wrap #main_2023 .schedule_list table tr #month,
+.wrap #main_2025 .schedule_list table tr #month {
+  width: 10%;
+}
+.wrap #main_2024 .schedule_list table tr #title,
+.wrap #main_2023 .schedule_list table tr #title,
+.wrap #main_2025 .schedule_list table tr #title {
+  width: 20%;
+}
+.wrap #main_2024 .schedule_list table tr #duration,
+.wrap #main_2023 .schedule_list table tr #duration,
+.wrap #main_2025 .schedule_list table tr #duration {
+  width: 20%;
+}
+.wrap #main_2024 .schedule_list table tr #location,
+.wrap #main_2023 .schedule_list table tr #location,
+.wrap #main_2025 .schedule_list table tr #location {
+  width: 15%;
+}
+.wrap #main_2024 .schedule_list table tr strong,
+.wrap #main_2023 .schedule_list table tr strong,
+.wrap #main_2025 .schedule_list table tr strong {
+  font-family: "GmarketSansMedium";
+}
+.wrap #main_2024 .schedule_list #update_2025,
+.wrap #main_2023 .schedule_list #update_2025,
+.wrap #main_2025 .schedule_list #update_2025 {
+  text-align: center;
+}
+.wrap #main_2024 .up_btn,
+.wrap #main_2023 .up_btn,
+.wrap #main_2025 .up_btn {
+  display: none;
+  visibility: hidden;
+  position: fixed;
+  cursor: pointer;
+  right: 150px;
+  bottom: 150px;
+  z-index: 10;
+  background: linear-gradient(135deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.4) 30%);
+  border-radius: 50%;
+  border: solid 1px var(--color-gray);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 34px rgba(0, 0, 0, 0.15);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.wrap #footer {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #5e5e5e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap #footer .ft_left {
+  padding-left: 150px;
+}
+.wrap #footer .ft_left img {
+  width: 180px;
+  margin-bottom: 10px;
+}
+.wrap #footer .ft_left p strong {
+  font-family: "GmarketSansMedium";
+}
+.wrap #footer .ft_right {
+  padding-right: 150px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.wrap #footer .ft_right .ft_link {
+  margin-bottom: 10px;
+}
+.wrap #footer .ft_right .ft_link ul {
+  display: flex;
+  gap: 30px;
+}
+.wrap #footer .ft_right .ft_link ul li {
+  font-family: "GmarketSansMedium";
+}
+.wrap #footer .ft_right .ft_sns ul {
+  display: flex;
+  gap: 10px;
+}
+.wrap #footer .ft_right .ft_sns ul li {
+  width: 40px;
+}
+.wrap #footer .ft_right .ft_sns ul li img {
+  width: 100%;
+}
+.wrap #footer .mobile_footer {
+  display: none;
+}
+
+@media (max-width: 780px) {
+  body {
+    font-size: 15px;
+  }
+  .wrap #header {
+    padding: 0 20px;
+  }
+  .wrap #header .hd_title img {
+    width: 200px;
+  }
+  .wrap #header .hd_gnb {
+    display: none;
+  }
+  .wrap #header .mobile_header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .wrap #header .mobile_header ul {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    text-align: right;
+    top: 50px;
+    right: -20px;
+    z-index: 10000;
+    background: #101010;
+  }
+  .wrap #header .mobile_header ul li {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .wrap #header .mobile_header ul li:hover {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #header .mobile_header ul li:nth-child(3) {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_2024,
+  .wrap #main_2023,
+  .wrap #main_2025 {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 100px 0;
+  }
+  .wrap #main_2024 .year,
+  .wrap #main_2023 .year,
+  .wrap #main_2025 .year {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  .wrap #main_2024 .year h2,
+  .wrap #main_2023 .year h2,
+  .wrap #main_2025 .year h2 {
+    font-family: "GmarketSansBold";
+    font-size: 15px;
+  }
+  .wrap #main_2024 .year button,
+  .wrap #main_2023 .year button,
+  .wrap #main_2025 .year button {
+    color: #fff;
+  }
+  .wrap #main_2024 .schedule_list,
+  .wrap #main_2023 .schedule_list,
+  .wrap #main_2025 .schedule_list {
+    width: 100%;
+  }
+  .wrap #main_2024 .schedule_list table,
+  .wrap #main_2023 .schedule_list table,
+  .wrap #main_2025 .schedule_list table {
+    width: 100%;
+  }
+  .wrap #main_2024 .schedule_list table tr,
+  .wrap #main_2023 .schedule_list table tr,
+  .wrap #main_2025 .schedule_list table tr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  .wrap #main_2024 .schedule_list table tr #month,
+  .wrap #main_2024 .schedule_list table tr #title,
+  .wrap #main_2024 .schedule_list table tr #duration,
+  .wrap #main_2024 .schedule_list table tr #location,
+  .wrap #main_2023 .schedule_list table tr #month,
+  .wrap #main_2023 .schedule_list table tr #title,
+  .wrap #main_2023 .schedule_list table tr #duration,
+  .wrap #main_2023 .schedule_list table tr #location,
+  .wrap #main_2025 .schedule_list table tr #month,
+  .wrap #main_2025 .schedule_list table tr #title,
+  .wrap #main_2025 .schedule_list table tr #duration,
+  .wrap #main_2025 .schedule_list table tr #location {
+    width: 100%;
+  }
+  .wrap #main_2024 .schedule_list table tr strong,
+  .wrap #main_2023 .schedule_list table tr strong,
+  .wrap #main_2025 .schedule_list table tr strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_2024 .schedule_list #update_2025,
+  .wrap #main_2023 .schedule_list #update_2025,
+  .wrap #main_2025 .schedule_list #update_2025 {
+    text-align: center;
+  }
+  .wrap #main_2024 .up_btn,
+  .wrap #main_2023 .up_btn,
+  .wrap #main_2025 .up_btn {
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    right: 150px;
+    bottom: 150px;
+    z-index: 10;
+    background: linear-gradient(135deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.4) 30%);
+    border-radius: 50%;
+    border: solid 1px var(--color-gray);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.15);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap #footer {
+    height: 400px;
+  }
+  .wrap #footer .ft_left {
+    display: none;
+  }
+  .wrap #footer .ft_right {
+    display: none;
+  }
+  .wrap #footer .mobile_footer {
+    display: block;
+    padding: 0 20px;
+  }
+  .wrap #footer .mobile_footer img {
+    width: 100px;
+  }
+  .wrap #footer .mobile_footer .ft_info {
+    margin: 10px 0 20px 0;
+  }
+  .wrap #footer .mobile_footer .ft_info p strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer .mobile_footer .ft_link {
+    margin-bottom: 20px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul {
+    display: flex;
+    gap: 10px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li {
+    width: 30px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li img {
+    width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  body {
+    font-size: 15px;
+  }
+  .wrap #header {
+    padding: 0 50px;
+  }
+  .wrap #header .hd_title img {
+    width: 200px;
+  }
+  .wrap #header .hd_gnb {
+    display: none;
+  }
+  .wrap #header .mobile_header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+  }
+  .wrap #header .mobile_header .fa-bars {
+    font-size: 20px;
+  }
+  .wrap #header .mobile_header ul {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    text-align: right;
+    top: 50px;
+    right: -20px;
+    z-index: 10000;
+    background: #101010;
+  }
+  .wrap #header .mobile_header ul li {
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  .wrap #header .mobile_header ul li:hover {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #header .mobile_header ul li:nth-child(3) {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_2024,
+  .wrap #main_2023,
+  .wrap #main_2025 {
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 100px 0;
+  }
+  .wrap #main_2024 .year,
+  .wrap #main_2023 .year,
+  .wrap #main_2025 .year {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 70px;
+  }
+  .wrap #main_2024 .year h2,
+  .wrap #main_2023 .year h2,
+  .wrap #main_2025 .year h2 {
+    font-family: "GmarketSansBold";
+    font-size: 15px;
+  }
+  .wrap #main_2024 .year button,
+  .wrap #main_2023 .year button,
+  .wrap #main_2025 .year button {
+    color: #fff;
+  }
+  .wrap #main_2024 .schedule_list,
+  .wrap #main_2023 .schedule_list,
+  .wrap #main_2025 .schedule_list {
+    width: 100%;
+  }
+  .wrap #main_2024 .schedule_list table,
+  .wrap #main_2023 .schedule_list table,
+  .wrap #main_2025 .schedule_list table {
+    width: 100%;
+  }
+  .wrap #main_2024 .schedule_list table tr,
+  .wrap #main_2023 .schedule_list table tr,
+  .wrap #main_2025 .schedule_list table tr {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+    gap: 20px;
+  }
+  .wrap #main_2024 .schedule_list table tr #month,
+  .wrap #main_2023 .schedule_list table tr #month,
+  .wrap #main_2025 .schedule_list table tr #month {
+    width: 5%;
+  }
+  .wrap #main_2024 .schedule_list table tr #title,
+  .wrap #main_2023 .schedule_list table tr #title,
+  .wrap #main_2025 .schedule_list table tr #title {
+    width: 30%;
+  }
+  .wrap #main_2024 .schedule_list table tr #duration,
+  .wrap #main_2023 .schedule_list table tr #duration,
+  .wrap #main_2025 .schedule_list table tr #duration {
+    width: 30%;
+  }
+  .wrap #main_2024 .schedule_list table tr #location,
+  .wrap #main_2023 .schedule_list table tr #location,
+  .wrap #main_2025 .schedule_list table tr #location {
+    width: 30%;
+  }
+  .wrap #main_2024 .schedule_list table tr strong,
+  .wrap #main_2023 .schedule_list table tr strong,
+  .wrap #main_2025 .schedule_list table tr strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #main_2024 .schedule_list #update_2025,
+  .wrap #main_2023 .schedule_list #update_2025,
+  .wrap #main_2025 .schedule_list #update_2025 {
+    text-align: center;
+  }
+  .wrap #main_2024 .up_btn,
+  .wrap #main_2023 .up_btn,
+  .wrap #main_2025 .up_btn {
+    display: none;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    right: 150px;
+    bottom: 150px;
+    z-index: 10;
+    background: linear-gradient(135deg, rgb(255, 255, 255), rgba(255, 255, 255, 0.4) 30%);
+    border-radius: 50%;
+    border: solid 1px var(--color-gray);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 34px rgba(0, 0, 0, 0.15);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .wrap #footer {
+    height: 400px;
+  }
+  .wrap #footer .ft_left {
+    display: none;
+  }
+  .wrap #footer .ft_right {
+    display: none;
+  }
+  .wrap #footer .mobile_footer {
+    display: block;
+    padding: 0 20px;
+  }
+  .wrap #footer .mobile_footer img {
+    width: 100px;
+  }
+  .wrap #footer .mobile_footer .ft_info {
+    margin: 10px 0 20px 0;
+  }
+  .wrap #footer .mobile_footer .ft_info p strong {
+    font-family: "GmarketSansMedium";
+  }
+  .wrap #footer .mobile_footer .ft_link {
+    margin-bottom: 20px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul {
+    display: flex;
+    gap: 10px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li {
+    width: 30px;
+  }
+  .wrap #footer .mobile_footer .ft_sns ul li img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=schedule.css.map */

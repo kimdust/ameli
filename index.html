@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <title>Ameli 아멜리</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ameli 아멜리" />
+    <meta
+      property="og:description"
+      content="화장이 처음인 누군가에게도 메이크업 아티스트에게도 아멜리는 쉽습니다."
+    />
+    <meta property="og:image" content="./images/urlthumbnail.png" />
+    <meta property="og:url" content="https://kimdust.me/ameli" />
+
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/comm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/comm.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <div class="hd_left">
+          <h1 id="hd_title">
+            <a href="index.html">
+              <img src="./images/headernfooter/logo_black.png" alt="Ameli" />
+            </a>
+          </h1>
+          <div class="gnb">
+            <ul>
+              <li><a href="product.html">PRODUCT</a></li>
+              <li><a href="makeup.html">MAKEUP</a></li>
+              <li><a href="hava.html">HAVA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_right">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="25"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.16667 14.3333C11.8486 14.3333 14.8333 11.3486 14.8333 7.66667C14.8333 3.98477 11.8486 1 8.16667 1C4.48477 1 1.5 3.98477 1.5 7.66667C1.5 11.3486 4.48477 14.3333 8.16667 14.3333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.5001 16L12.9167 12.4167"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="29"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 1L1.5 4.33333V16C1.5 16.442 1.67559 16.8659 1.98816 17.1785C2.30072 17.4911 2.72464 17.6667 3.16667 17.6667H14.8333C15.2754 17.6667 15.6993 17.4911 16.0118 17.1785C16.3244 16.8659 16.5 16.442 16.5 16V4.33333L14 1H4Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.5 4.33333H16.5"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.3333 7.66666C12.3333 8.55071 11.9821 9.39856 11.357 10.0237C10.7319 10.6488 9.88401 11 8.99996 11C8.1159 11 7.26806 10.6488 6.64294 10.0237C6.01782 9.39856 5.66663 8.55071 5.66663 7.66666"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.1667 10.1667C16.4083 8.95 17.6667 7.49167 17.6667 5.58333C17.6667 4.36776 17.1838 3.20197 16.3242 2.34243C15.4647 1.48289 14.2989 1 13.0833 1C11.6167 1 10.5833 1.41667 9.33333 2.66667C8.08333 1.41667 7.05 1 5.58333 1C4.36776 1 3.20197 1.48289 2.34243 2.34243C1.48289 3.20197 1 4.36776 1 5.58333C1 7.5 2.25 8.95833 3.5 10.1667L9.33333 16L15.1667 10.1667Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="27"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00004 9.83333C10.3012 9.83333 12.1667 7.96785 12.1667 5.66667C12.1667 3.36548 10.3012 1.5 8.00004 1.5C5.69885 1.5 3.83337 3.36548 3.83337 5.66667C3.83337 7.96785 5.69885 9.83333 8.00004 9.83333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 16.5002C14.6667 14.7321 13.9643 13.0364 12.7141 11.7861C11.4638 10.5359 9.76815 9.8335 8.00004 9.8335C6.23193 9.8335 4.53624 10.5359 3.286 11.7861C2.03575 13.0364 1.33337 14.7321 1.33337 16.5002"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main id="main">
+        <div class="intro">
+          <ul class="intro_first_line">
+            <li>
+              <img src="./images/product/cushion_bora.png" alt="쿠션" />
+            </li>
+            <li>
+              <img
+                src="./images/product/foundation_cool.png"
+                alt="파운데이션"
+              />
+            </li>
+            <li id="transparent"></li>
+            <li>
+              <img src="./images/product/fletlips_vampire.png" alt="립" />
+            </li>
+            <li id="transparent" class="li2box">
+              <p class="first_line_txt">화장이 처음인 누군가에게도</p>
+            </li>
+            <li>
+              <img
+                src="./images/product/stepbasic_allthatnude.png"
+                alt="섀도우"
+              />
+            </li>
+          </ul>
+          <ul class="intro_sec_line">
+            <li id="transparent" class="li2box">
+              <p class="sec_line_txt">메이크업 아티스트에게도</p>
+            </li>
+            <li>
+              <img
+                src="./images/product/powder_naturalbeige.png"
+                alt="파우더"
+              />
+            </li>
+            <li id="transparent"></li>
+            <li>
+              <img src="./images/product/concealer_baby.png" alt="컨실러" />
+            </li>
+            <li>
+              <img src="./images/product/cushion_charok.png" alt="쿠션" />
+            </li>
+            <li id="transparent"></li>
+          </ul>
+          <ul class="intro_third_line">
+            <li>
+              <img src="./images/product/airlips_raretem.png" alt="립" />
+            </li>
+            <li id="transparent" class="li2box">
+              <p class="third_line_txt">아멜리는 쉽습니다</p>
+            </li>
+            <li>
+              <img src="./images/product/stepbasic_vintage.png" alt="섀도우" />
+            </li>
+            <li id="transparent" class="li2box">
+              <img src="./images/headernfooter/logo_black.png" alt="아멜리" />
+            </li>
+            <li>
+              <img src="./images/product/powder_milyviolet.png" alt="파우더" />
+            </li>
+          </ul>
+        </div>
+        <div class="banner">
+          <ul>
+            <li>
+              <img
+                src="./images/main/banner01.png"
+                alt="우리가 바라는 여름색감"
+              />
+              <div class="banner_txt">
+                <h3>우리가 바라는 여름 색감</h3>
+                <p>
+                  부드러운 살구 과즙
+                  <br />
+                  <strong>817 에프리콧치즈</strong>
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/main/banner02.png"
+                alt="보라, 도화가 너무 밝았다면"
+              />
+              <div class="banner_txt">
+                <h3>보라, 도화가 너무 밝았다면</h3>
+                <p>
+                  차가운 초록
+                  <br />
+                  <strong>컴플리먼트 시리즈 차록</strong>
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./images/main/banner03.png"
+                alt="손가락이 지나간 자리마다"
+              />
+              <div class="banner_txt">
+                <h3>손가락이 지나간 자리마다</h3>
+                <p>
+                  핑크빛 투명감
+                  <br />
+                  <strong>921 밤밤</strong>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="best">
+          <h2>지금 BEST 10</h2>
+          <div class="swiper bestslide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img src="./images/product/cushion_bora.png" alt="쿠션" />
+                </div>
+                <h4>
+                  컴플리먼트 시리즈 쿠션
+                  <br />
+                  SPF50+, PA+++ 보라
+                </h4>
+                <span>25,200원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img src="./images/product/cushion_dohwa.png" alt="쿠션" />
+                </div>
+
+                <h4>
+                  톤업 베이스 데일리 쿠션
+                  <br />
+                  SPF50+, PA+++ 도화
+                </h4>
+                <span>23,400원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img
+                    src="./images/product/powder_milyviolet.png"
+                    alt="파우더"
+                  />
+                </div>
+
+                <h4>
+                  베이크드파우더 003
+                  <br />
+                  밀키바이올렛
+                </h4>
+                <span>30,600원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img src="./images/product/cushion_charok.png" alt="쿠션" />
+                </div>
+
+                <h4>
+                  컴플리먼트 시리즈 쿠션
+                  <br />
+                  SPF42+, PA++ 차록
+                </h4>
+                <span>25,900원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img
+                    src="./images/product/stepbasic_vintage.png"
+                    alt="섀도우"
+                  />
+                </div>
+
+                <h4>
+                  스탭베이직 244
+                  <br />
+                  빈티지발렌타인
+                </h4>
+                <span>13,500원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img
+                    src="./images/product/stepbasic_ballerina.png"
+                    alt="섀도우"
+                  />
+                </div>
+
+                <h4>
+                  스탭베이직 219
+                  <br />
+                  발레리나
+                </h4>
+                <span>13,500원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img src="./images/product/airlips_raretem.png" alt="립" />
+                </div>
+                <h4>
+                  에어립스 830
+                  <br />
+                  레어템
+                </h4>
+                <span>15,300원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img
+                    src="./images/product/foundation_cool.png"
+                    alt="파운데이션"
+                  />
+                </div>
+
+                <h4>
+                  쿨쓰루쓰루 파운데이션
+                  <br />
+                  SPF30, PA++ 013 포세린
+                </h4>
+                <span>18,900원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img
+                    src="./images/product/sweetdia_angelblood.png"
+                    alt="섀도우"
+                  />
+                </div>
+
+                <h4>
+                  스윗다이아 190
+                  <br />
+                  엔젤블러드
+                </h4>
+                <span>15,300원</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="img_box">
+                  <img
+                    src="./images/product/stepbasic_ranunculus.png"
+                    alt="섀도우"
+                  />
+                </div>
+                <h4>
+                  스탭베이직 255
+                  <br />
+                  라넌큘러스
+                </h4>
+                <span>15,300원</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup">
+          <h2>아멜리 팝업 이야기</h2>
+          <p>
+            설레는 경험과 다정한 이야기로 가득차 있었던 아멜리의 더현대서울
+            팝업의 현장 이야기
+          </p>
+          <a href="#"><img src="./images/main/popup.png" alt="팝업" /></a>
+        </div>
+        <div class="howtouse">
+          <h2>따라해 볼까요?</h2>
+          <p>모두 다른 핑크 메이크업 HOW TO USE</p>
+          <ul>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/main/makeup-okidbambam.png"
+                  alt="오키드 핑크"
+                />
+                <strong>오키드 핑크 메이크업</strong>
+                <p>
+                  늘 바르던 뽀용 핑크는 지겨우니까!
+                  <br />
+                  우아 오묘 오키드 핑크 메이크업
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/main/makeup-balgrae.png" alt="발그레 반짝" />
+                <strong>발그레 반짝 메이크업</strong>
+                <p>
+                  방금 운동하고 난 것처럼
+                  <br />
+                  저절로 발그레해 진 그 두 뺨
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/main/makeup-banilla.png" alt="바닐라 피치" />
+                <strong>바닐라 피치 메이크업</strong>
+                <p>
+                  연약하고 사랑스러운 피치와
+                  <br />
+                  화려한 바닐라빛 반짝이의 만남
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="./images/main/makeup-peach.png" alt="복숭 분홍" />
+                <strong>복숭 분홍 메이크업</strong>
+                <p>
+                  분홍을 시작하고픈 뉴멜리를 위한
+                  <br />
+                  복숭 분홍 메이크업
+                </p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="./images/main/makeup-pinkwater.png"
+                  alt="핑크 물빛광"
+                />
+                <strong>핑크 물빛광 메이크업</strong>
+                <p>
+                  햇살 아래에서 반짝반짝반짝
+                  <br />
+                  촉촉하게 빛나는 핑크 물빛광
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="ft_left">
+          <p><strong>주식회사 아멜리글로벌</strong></p>
+          <p><strong>대표자</strong> 권유미</p>
+          <p><strong>개인정보관리</strong> 이한나</p>
+          <p><strong>사업자등록번호</strong> 487-88-01427</p>
+          <p><strong>통신판매업번호</strong> 제 2019-서울강남-04775 호</p>
+          <p><strong>INQUIRY</strong> biz@ameli.co.kr</p>
+          <p><br /></p>
+          <p>
+            서울특별시 강남구 테헤란로20길 18 부봉빌딩 6층 | 1533-8835
+            (02-566-7889)
+          </p>
+        </div>
+        <div class="ft_right">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ameli_official_kr/">
+                <img
+                  src="./images/headernfooter/instagram.png"
+                  alt="인스타그램"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.naver.com/ameli__">
+                <img src="./images/headernfooter/blog.png" alt="블로그" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ameli.cosmetic/">
+                <img src="./images/headernfooter/facebook.png" alt="페이스북" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

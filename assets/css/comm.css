@@ -1,0 +1,507 @@
+@charset "UTF-8";
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+button,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Pretendard";
+}
+
+fieldset,
+img {
+  border: 0 none;
+}
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+input,
+select,
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button {
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type=text], input[type=password], input[type=submit], input[type=search] {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+input:checked[type=checkbox] {
+  background-color: #666;
+  -webkit-appearance: checkbox;
+}
+
+button {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+  -webkit-appearance: button;
+  border-radius: 0;
+}
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+/* 기본 폰트 설정 */
+/* mobile */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+  color: #333;
+  font-weight: lighter;
+}
+
+/* desktop */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 16px;
+  }
+}
+/* color값은 디자인가이드에 맞게사용 */
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+hr {
+  display: none;
+}
+
+input[type=password] {
+  font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
+/* skipnavigation */
+#skip {
+  position: relative;
+  z-index: 3000;
+}
+#skip a {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  padding: 7px 10px 5px;
+  background: white;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0;
+}
+#skip a:focus {
+  top: 0;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* 이미지 스프라이트 */
+.img-g {
+  display: inline-block;
+  overflow: hidden;
+  background: url(../../images/comm/img-comm.png) no-repeat;
+  vertical-align: top;
+}
+
+/* 이미지 */
+/* global */
+.ir-pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0px;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
+.ir-wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+
+/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+.blind,
+caption,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
+.f_l {
+  float: left;
+}
+
+.f_r {
+  float: right;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.tbl {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 테이블 초기화 */
+.clearfix {
+  display: block;
+  overflow: visible;
+  width: auto;
+  clear: both;
+  zoom: 1;
+}
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  content: "";
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  background-color: #fdf9f8;
+}
+
+.wrap {
+  width: 100vw;
+}
+.wrap #header {
+  width: 100%;
+  height: 100px;
+  padding: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10000;
+  background: rgba(253, 249, 248, 0.662745098);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.wrap #header .hd_left {
+  display: flex;
+}
+.wrap #header .hd_left #hd_title {
+  margin-right: 100px;
+}
+.wrap #header .hd_left #hd_title a {
+  display: block;
+  width: 111px;
+}
+.wrap #header .hd_left #hd_title a img {
+  width: 111px;
+}
+.wrap #header .hd_left .gnb {
+  display: flex;
+}
+.wrap #header .hd_left .gnb ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 400;
+  gap: 50px;
+}
+.wrap #header .hd_right {
+  display: flex;
+}
+.wrap #header .hd_right ul {
+  display: flex;
+  gap: 30px;
+}
+.wrap #main {
+  width: 100%;
+}
+.wrap #main .intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 200px;
+}
+.wrap #main .intro ul {
+  display: flex;
+  gap: 10px;
+}
+.wrap #main .intro ul li {
+  width: 16%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.199);
+  border-radius: 30px;
+}
+.wrap #main .intro ul li img {
+  width: 100%;
+}
+.wrap #main .intro ul .li2box {
+  width: 32.8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap #main .intro ul .li2box p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrap #main .intro ul .li2box img {
+  width: 70%;
+}
+.wrap #main .intro ul #transparent {
+  box-shadow: none;
+}
+.wrap #main .banner {
+  margin: 100px 0 150px 0;
+  padding: 0 200px;
+}
+.wrap #main .banner ul {
+  display: flex;
+  gap: 30px;
+}
+.wrap #main .banner ul li {
+  width: 33.33%;
+  position: relative;
+  cursor: pointer;
+}
+.wrap #main .banner ul li img {
+  width: 100%;
+  border-radius: 30px;
+  transition: filter 0.3s ease;
+}
+.wrap #main .banner ul li .banner_txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  display: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.wrap #main .banner ul li .banner_txt h3 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.wrap #main .banner ul li .banner_txt p strong {
+  font-weight: 300;
+}
+.wrap #main .banner ul li:hover img {
+  filter: brightness(80%);
+}
+.wrap #main .banner ul li:hover .banner_txt {
+  display: block;
+  opacity: 1;
+}
+.wrap #main .best {
+  padding-left: 200px;
+  margin-bottom: 150px;
+}
+.wrap #main .best h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrap #main .best .bestslide {
+  margin-top: 30px;
+  padding: 2px;
+}
+.wrap #main .best .bestslide .swiper-wrapper .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.wrap #main .best .bestslide .swiper-wrapper .swiper-slide .img_box {
+  width: 100%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.199);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.wrap #main .best .bestslide .swiper-wrapper .swiper-slide .img_box img {
+  width: 100%;
+  cursor: pointer;
+}
+.wrap #main .best .bestslide .swiper-wrapper .swiper-slide h4 {
+  font-weight: 500;
+  margin: 10px 0;
+}
+.wrap #main .popup {
+  padding: 0 200px;
+  margin-bottom: 150px;
+}
+.wrap #main .popup h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrap #main .popup p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.wrap #main .howtouse {
+  padding: 0 200px;
+  margin-bottom: 180px;
+}
+.wrap #main .howtouse h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrap #main .howtouse p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.wrap #main .howtouse ul {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+.wrap #main .howtouse ul li {
+  text-align: center;
+}
+.wrap #main .howtouse ul li img {
+  width: 100%;
+  height: 370px;
+  margin-bottom: 10px;
+}
+.wrap #main .howtouse ul li strong {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrap #footer {
+  width: 100%;
+  background-color: #fcf1f1;
+  color: #b75a66;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+.wrap #footer .ft_left {
+  padding-left: 200px;
+}
+.wrap #footer .ft_left p strong {
+  font-weight: 500;
+}
+.wrap #footer .ft_right {
+  padding-right: 200px;
+}
+.wrap #footer .ft_right ul {
+  display: flex;
+  gap: 20px;
+}
+.wrap #footer .ft_right ul li {
+  width: 30px;
+}
+.wrap #footer .ft_right ul li img {
+  width: 100%;
+}/*# sourceMappingURL=comm.css.map */
