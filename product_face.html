@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <title>페이스 - 아멜리</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ameli 아멜리" />
+    <meta
+      property="og:description"
+      content="화장이 처음인 누군가에게도 메이크업 아티스트에게도 아멜리는 쉽습니다."
+    />
+    <meta property="og:image" content="./images/urlthumbnail.png" />
+    <meta property="og:url" content="https://kimdust.me/ameli" />
+
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/comm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/comm.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <div class="hd_left">
+          <h1 id="hd_title">
+            <a href="index.html">
+              <img src="./images/headernfooter/logo_black.png" alt="Ameli" />
+            </a>
+          </h1>
+          <div class="gnb">
+            <ul>
+              <li>
+                <a href="product_face.html" style="font-weight: 700">PRODUCT</a>
+              </li>
+              <li><a href="makeup.html">MAKEUP</a></li>
+              <li><a href="hava.html">HAVA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_right">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="25"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.16667 14.3333C11.8486 14.3333 14.8333 11.3486 14.8333 7.66667C14.8333 3.98477 11.8486 1 8.16667 1C4.48477 1 1.5 3.98477 1.5 7.66667C1.5 11.3486 4.48477 14.3333 8.16667 14.3333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.5001 16L12.9167 12.4167"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="29"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 1L1.5 4.33333V16C1.5 16.442 1.67559 16.8659 1.98816 17.1785C2.30072 17.4911 2.72464 17.6667 3.16667 17.6667H14.8333C15.2754 17.6667 15.6993 17.4911 16.0118 17.1785C16.3244 16.8659 16.5 16.442 16.5 16V4.33333L14 1H4Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.5 4.33333H16.5"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.3333 7.66666C12.3333 8.55071 11.9821 9.39856 11.357 10.0237C10.7319 10.6488 9.88401 11 8.99996 11C8.1159 11 7.26806 10.6488 6.64294 10.0237C6.01782 9.39856 5.66663 8.55071 5.66663 7.66666"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.1667 10.1667C16.4083 8.95 17.6667 7.49167 17.6667 5.58333C17.6667 4.36776 17.1838 3.20197 16.3242 2.34243C15.4647 1.48289 14.2989 1 13.0833 1C11.6167 1 10.5833 1.41667 9.33333 2.66667C8.08333 1.41667 7.05 1 5.58333 1C4.36776 1 3.20197 1.48289 2.34243 2.34243C1.48289 3.20197 1 4.36776 1 5.58333C1 7.5 2.25 8.95833 3.5 10.1667L9.33333 16L15.1667 10.1667Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="27"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00004 9.83333C10.3012 9.83333 12.1667 7.96785 12.1667 5.66667C12.1667 3.36548 10.3012 1.5 8.00004 1.5C5.69885 1.5 3.83337 3.36548 3.83337 5.66667C3.83337 7.96785 5.69885 9.83333 8.00004 9.83333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 16.5002C14.6667 14.7321 13.9643 13.0364 12.7141 11.7861C11.4638 10.5359 9.76815 9.8335 8.00004 9.8335C6.23193 9.8335 4.53624 10.5359 3.286 11.7861C2.03575 13.0364 1.33337 14.7321 1.33337 16.5002"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main id="product_face">
+        <h2>PRODUCT</h2>
+        <div class="product_nav">
+          <ul>
+            <li>
+              <a href="product_face.html" style="font-weight: 500">페이스</a>
+            </li>
+            <li>
+              <a href="product_eye.html">아이</a>
+            </li>
+            <li><a href="product_lip.html">립</a></li>
+            <li><a href="product_tool.html">메이크업 툴</a></li>
+            <li><a href="product_end.html">아멜리의 서랍</a></li>
+          </ul>
+        </div>
+        <div class="product_list">
+          <ul>
+            <li>
+              <img src="./images/product/face/cushion_charok.png" alt="쿠션" />
+              <strong>
+                컴플리먼트 시리즈 쿠션
+                <br />
+                SPF42, PA++ 차록
+              </strong>
+              <span>25,900원</span>
+              <p>
+                차가운 초록색이 붉은 기는 차갑게,
+                <br />
+                21호, 23호 피부톤은 차분하게 밝혀주는 차록
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img src="./images/product/face/cushion_bora.png" alt="쿠션" />
+              <strong>
+                컴플리먼트 시리즈 쿠션
+                <br />
+                SPF50+, PA+++ 보라
+              </strong>
+              <span>25,200원</span>
+              <p>
+                말간 보라가 스며들어 노르스름한 피부톤은
+                <br />
+                청아하게 어두운 피부톤은 화사하게
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img src="./images/product/face/cushion_dohwa.png" alt="쿠션" />
+              <strong>톤업 베이스 데일리 쿠션 <br />SPF50+, PA+++ 도화</strong>
+              <span>23,200원</span>
+              <p>
+                노르스름한 얼굴을 자연스런 쿨톤으로
+                <br />
+                시간이 지날수록 좋아보이는 피부
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img src="./images/product/face/cushion_baeksul.png" alt="쿠션" />
+              <strong>
+                톤업 베이스 데일리 쿠션
+                <br />
+                SPF50+, PA+++ 000 백설
+              </strong>
+              <span>26,000원</span>
+              <p>
+                시간이 조금 지나면 사악 스미는 하얀 빛
+                <br />
+                내 얼굴의 반사판, 백설
+              </p>
+              <div class="winter_tag">겨울한정</div>
+            </li>
+            <li>
+              <img src="./images/product/face/filter_bora.png" alt="필터" />
+              <strong>
+                컴플리먼트 시리즈
+                <br />
+                보라 필터
+              </strong>
+              <span>28,000원</span>
+              <p>
+                자외선은 물론 가시광선까지 차단하고
+                <br />
+                노르스름 피부톤은 화사하게 보완해요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/foundation_cool.png"
+                alt="파운데이션"
+              />
+              <strong>
+                쿨쓰루쓰루 파운데이션<br />
+                SPF30, PA++</strong
+              >
+              <span>18,900원</span>
+              <p>
+                자연스럽게 환해지는 도자기 피부
+                <br />
+                4가지 컬러가 있어요
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/powder_naturalbeige.png"
+                alt="파우더"
+              />
+              <strong>베이크드파우더<br />001 내추럴베이지</strong>
+              <span>30,600원</span>
+              <p>
+                아주 얇고 고르게 착 밀착되면서
+                <br />
+                피지는 잡아주고 은은한 광 표현
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/powder_milyviolet.png"
+                alt="파우더"
+              />
+              <strong>베이크드파우더<br />003 밀키 바이올렛</strong>
+              <span>30,600원</span>
+              <p>
+                살빛에 자연스럽게 녹아드는 라벤더빛이
+                <br />
+                어떤 피부톤에 발라도 자연스럽게 어우러지게
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/powder_snowwhite.png"
+                alt="파우더"
+              />
+              <strong>베이크드파우더<br />005 스노우화이트</strong>
+              <span>30,600원</span>
+              <p>
+                보송하게 화사해지면서
+                <br />
+                은은한 광 표현까지
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/concealer_bisk.png"
+                alt="컨실러"
+              />
+              <strong>프리핏인앤아웃컨실러<br />002 비스크</strong>
+              <span>10,800원</span>
+              <p>
+                내 피부마냥 녹아드는 색이라
+                <br />
+                그래서 팔자주름에 효과적이에요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/concealer_baby.png"
+                alt="컨실러"
+              />
+              <strong>프리핏인앤아웃컨실러<br />003 베이비</strong>
+              <span>10,800원</span>
+              <p>
+                눈 밑 다크서클 커버에 가장 적합하지만
+                <br />
+                어두운 피부에 하이라이터로도 좋아요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/concealer_highdrengia.png"
+                alt="컨실러"
+              />
+              <strong>프리핏인앤아웃컨실러<br />007 하이드랜지아</strong>
+              <span>10,800원</span>
+              <p>
+                약간의 파르스름이 들어간 옅은 수국 보랏빛
+                <br />
+                피부의 붉은기를 중화해줘요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/face/concealer_nomakeup.png"
+                alt="컨실러"
+              />
+              <strong>프리핏인앤아웃컨실러<br />008 노메이크업</strong>
+              <span>10,800원</span>
+              <p>
+                가린 티 팍 나는 컨실러는 이제 그만
+                <br />
+                내 피부색처럼 자연스레 연결되는 컨실러
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="up_btn">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="ft_left">
+          <p><strong>주식회사 아멜리글로벌</strong></p>
+          <p><strong>대표자</strong> 권유미</p>
+          <p><strong>개인정보관리</strong> 이한나</p>
+          <p><strong>사업자등록번호</strong> 487-88-01427</p>
+          <p><strong>통신판매업번호</strong> 제 2019-서울강남-04775 호</p>
+          <p><strong>INQUIRY</strong> biz@ameli.co.kr</p>
+          <p><br /></p>
+          <p>
+            서울특별시 강남구 테헤란로20길 18 부봉빌딩 6층 | 1533-8835
+            (02-566-7889)
+          </p>
+        </div>
+        <div class="ft_right">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ameli_official_kr/">
+                <img
+                  src="./images/headernfooter/instagram.png"
+                  alt="인스타그램"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.naver.com/ameli__">
+                <img src="./images/headernfooter/blog.png" alt="블로그" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ameli.cosmetic/">
+                <img src="./images/headernfooter/facebook.png" alt="페이스북" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

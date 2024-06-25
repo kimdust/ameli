@@ -56,3 +56,22 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+$(document).ready(function () {
+  $(".up_btn").hide();
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 500) {
+      $(".up_btn").fadeIn();
+      $(".up_btn").css("visibility", "visible");
+    } else {
+      $(".up_btn").fadeOut();
+      $(".up_btn").css("visibility", "hideen");
+    }
+  });
+
+  $(".up_btn").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
+});

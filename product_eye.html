@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <title>아이 - 아멜리</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ameli 아멜리" />
+    <meta
+      property="og:description"
+      content="화장이 처음인 누군가에게도 메이크업 아티스트에게도 아멜리는 쉽습니다."
+    />
+    <meta property="og:image" content="./images/urlthumbnail.png" />
+    <meta property="og:url" content="https://kimdust.me/ameli" />
+
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/comm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/comm.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <div class="hd_left">
+          <h1 id="hd_title">
+            <a href="index.html">
+              <img src="./images/headernfooter/logo_black.png" alt="Ameli" />
+            </a>
+          </h1>
+          <div class="gnb">
+            <ul>
+              <li>
+                <a href="product_face.html" style="font-weight: 700">PRODUCT</a>
+              </li>
+              <li><a href="makeup.html">MAKEUP</a></li>
+              <li><a href="hava.html">HAVA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_right">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="25"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.16667 14.3333C11.8486 14.3333 14.8333 11.3486 14.8333 7.66667C14.8333 3.98477 11.8486 1 8.16667 1C4.48477 1 1.5 3.98477 1.5 7.66667C1.5 11.3486 4.48477 14.3333 8.16667 14.3333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.5001 16L12.9167 12.4167"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="29"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 1L1.5 4.33333V16C1.5 16.442 1.67559 16.8659 1.98816 17.1785C2.30072 17.4911 2.72464 17.6667 3.16667 17.6667H14.8333C15.2754 17.6667 15.6993 17.4911 16.0118 17.1785C16.3244 16.8659 16.5 16.442 16.5 16V4.33333L14 1H4Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.5 4.33333H16.5"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.3333 7.66666C12.3333 8.55071 11.9821 9.39856 11.357 10.0237C10.7319 10.6488 9.88401 11 8.99996 11C8.1159 11 7.26806 10.6488 6.64294 10.0237C6.01782 9.39856 5.66663 8.55071 5.66663 7.66666"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.1667 10.1667C16.4083 8.95 17.6667 7.49167 17.6667 5.58333C17.6667 4.36776 17.1838 3.20197 16.3242 2.34243C15.4647 1.48289 14.2989 1 13.0833 1C11.6167 1 10.5833 1.41667 9.33333 2.66667C8.08333 1.41667 7.05 1 5.58333 1C4.36776 1 3.20197 1.48289 2.34243 2.34243C1.48289 3.20197 1 4.36776 1 5.58333C1 7.5 2.25 8.95833 3.5 10.1667L9.33333 16L15.1667 10.1667Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="27"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00004 9.83333C10.3012 9.83333 12.1667 7.96785 12.1667 5.66667C12.1667 3.36548 10.3012 1.5 8.00004 1.5C5.69885 1.5 3.83337 3.36548 3.83337 5.66667C3.83337 7.96785 5.69885 9.83333 8.00004 9.83333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 16.5002C14.6667 14.7321 13.9643 13.0364 12.7141 11.7861C11.4638 10.5359 9.76815 9.8335 8.00004 9.8335C6.23193 9.8335 4.53624 10.5359 3.286 11.7861C2.03575 13.0364 1.33337 14.7321 1.33337 16.5002"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main id="product_eye">
+        <h2>PRODUCT</h2>
+        <div class="product_nav">
+          <ul>
+            <li>
+              <a href="product_face.html">페이스</a>
+            </li>
+            <li>
+              <a href="product_eye.html" style="font-weight: 500">아이</a>
+            </li>
+            <li><a href="product_lip.html">립</a></li>
+            <li><a href="product_tool.html">메이크업 툴</a></li>
+            <li><a href="product_end.html">아멜리의 서랍</a></li>
+          </ul>
+        </div>
+        <div class="product_list">
+          <ul>
+            <li>
+              <img
+                src="./images/product/eye/stepbasic_ballerina.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                219 발레리나
+              </strong>
+              <span>13,500원</span>
+              <p>
+                여리고 부드러운 빈티지 로즈
+                <br />
+                웜톤 쿨톤 상관없이 화사해져요
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/stepbasic_plasticjamon.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                230 플라스틱자몽
+              </strong>
+              <span>13,500원</span>
+              <p>
+                세보이지만 여리여리 올라오는 자몽에이드
+                <br />
+                화려하게 상콤하게 돌아버린 자몽색
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sweetdia_yogurt.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                236 요거트
+              </strong>
+              <span>13,500원</span>
+              <p>
+                오렌지 조금 갈아넣은 요거트
+                <br />
+                부드러운 스킨톤 베이지 데일리템
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/stepbasic_macaronggray.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                243 마카롱그레이
+              </strong>
+              <span>13,500원</span>
+              <p>
+                따뜻한 베이지빛을 담은 회갈색
+                <br />
+                자연스러운 회색 음영
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/stepbasic_vintage.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                244 빈티지발렌타인
+              </strong>
+              <span>13,500원</span>
+              <p>
+                울먹메이크업의 필수컬러
+                <br />
+                실패없는 우아&고상 장미컬러
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/stepbasic_ranunculus.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                255 라넌큘러스
+              </strong>
+              <span>13,500원</span>
+              <p>
+                조용히 피어나는 꽃망울
+                <br />
+                뽀얀 라넌큘러스 베이스
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/stepbasic_mixing.png"
+                alt="섀도우"
+              />
+              <strong>
+                스탭베이직
+                <br />
+                256 믹싱
+              </strong>
+              <span>13,500원</span>
+              <p>
+                어떤 색과도 혼합가능한 오렌지
+                <br />
+                절대 탁해지지 않아 음영 메이크업이 쉬워져요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sweetdia_sparklelily.png"
+                alt="섀도우"
+              />
+              <strong>
+                스윗다이아
+                <br />
+                151
+              </strong>
+              <span>15,300원</span>
+              <p>
+                빛으로 확인하는 오팔의 반짝임
+                <br />
+                이중 피그먼트 보석의 아우라
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sweetdia_weddingbuqea.png"
+                alt="섀도우"
+              />
+              <strong>
+                스윗다이아
+                <br />
+                172 웨딩부케
+              </strong>
+              <span>15,300원</span>
+              <p>
+                비교불허 골드 로즈의 품격
+                <br />
+                우아한 골드와 빈티지 장미의 시작
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sweetdia_roserococo.png"
+                alt="섀도우"
+              />
+              <strong>
+                스윗다이아
+                <br />
+                180 로즈로코코
+              </strong>
+              <span>15,300원</span>
+              <p>
+                먼지가루 뿌린 바싹 말린 장미꽃잎
+                <br />
+                신비로운 빈티지 핑크
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sweetdia_allthatnude.png"
+                alt="섀도우"
+              />
+              <strong>
+                스윗다이아
+                <br />
+                182 올댓누드
+              </strong>
+              <span>15,300원</span>
+              <p>
+                고급스런 살결색에 빛을 더한
+                <br />
+                궁극의 누디 컬러 섀도
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sweetdia_angelblood.png"
+                alt="섀도우"
+              />
+              <strong>
+                스윗다이아
+                <br />
+                190 엔젤블러드
+              </strong>
+              <span>15,300원</span>
+              <p>
+                눈, 뺨, 콧날, 인중까지 한 줄 스윽
+                <br />
+                빛을 가지고 놀아요
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sparklespot_engelwings.png"
+                alt="섀도우"
+              />
+              <strong>
+                스파클스팟
+                <br />
+                508 엔젤윙스
+              </strong>
+              <span>17,100원</span>
+              <p>
+                이슬이 내린 투명한 청록풀잎색
+                <br />
+                맑게 반짝이는 골드, 그린, 실버, 블루펄
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sparklespot_vanillashow.png"
+                alt="섀도우"
+              />
+              <strong>
+                스파클스팟
+                <br />
+                514 바닐라쇼크
+              </strong>
+              <span>17,100원</span>
+              <p>
+                하나만 발라도, 다른 색과 섞어발라도
+                <br />
+                그저 영롱한 아이섀도우 계의 센터
+              </p>
+              <div class="limit_tag">한정수량</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sparklespot_redsolt.png"
+                alt="섀도우"
+              />
+              <strong>
+                스파클스팟
+                <br />
+                515 레드쏠트핑크칙촉
+              </strong>
+              <span>17,100원</span>
+              <p>
+                깨끗한 하얀 핑크 소금 결정체에
+                <br />
+                마치 빨간 고춧가루가 뿌려진 듯
+              </p>
+              <div class="best_tag">BEST</div>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/sparklespot_perpleengel.png"
+                alt="섀도우"
+              />
+              <strong>
+                스파클스팟
+                <br />
+                522 퍼플엔젤티얼스
+              </strong>
+              <span>17,100원</span>
+              <p>
+                입안 가득 토독, 톡톡! 터지는
+                <br />
+                달달한 보랏빛 팝핑 캔디 섀도우
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/astrallight_expensiverose.png"
+                alt="섀도우"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                004 익스펜시브로즈
+              </strong>
+              <span>24,300원</span>
+              <p>
+                장미에서 나올 수 있는 모든 색
+                <br />
+                하나의 섀도우 3가지 컬러
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/astrallight_dinkygold.png"
+                alt="섀도우"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                005 딩키골드
+              </strong>
+              <span>24,300원</span>
+              <p>
+                물결 위로 넘실대는 태양빛
+                <br />
+                극강의 화려함 고급스러움
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/astrallight_anotherlevel.png"
+                alt="섀도우"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                006 어나더레벨
+              </strong>
+              <span>24,300원</span>
+              <p>
+                후광이 감도는 우주의 그레이
+                <br />
+                레벨이 다른 발광
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/eye/astrallight_icyingorora.png"
+                alt="섀도우"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                007 아이싱오로라
+              </strong>
+              <span>24,300원</span>
+              <p>
+                남극의 바람에 흩날리는 오팔빛 얼음 조각
+                <br />
+                은빛 퍼플 골드 레이저빔
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="up_btn">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="ft_left">
+          <p><strong>주식회사 아멜리글로벌</strong></p>
+          <p><strong>대표자</strong> 권유미</p>
+          <p><strong>개인정보관리</strong> 이한나</p>
+          <p><strong>사업자등록번호</strong> 487-88-01427</p>
+          <p><strong>통신판매업번호</strong> 제 2019-서울강남-04775 호</p>
+          <p><strong>INQUIRY</strong> biz@ameli.co.kr</p>
+          <p><br /></p>
+          <p>
+            서울특별시 강남구 테헤란로20길 18 부봉빌딩 6층 | 1533-8835
+            (02-566-7889)
+          </p>
+        </div>
+        <div class="ft_right">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ameli_official_kr/">
+                <img
+                  src="./images/headernfooter/instagram.png"
+                  alt="인스타그램"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.naver.com/ameli__">
+                <img src="./images/headernfooter/blog.png" alt="블로그" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ameli.cosmetic/">
+                <img src="./images/headernfooter/facebook.png" alt="페이스북" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

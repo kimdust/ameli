@@ -25,7 +25,7 @@ body {
     align-items: center;
     position: fixed;
     z-index: 10000;
-    background: #fdf9f8a9;
+    background: hsla(12, 56%, 98%, 0.663);
     backdrop-filter: blur(10px);
     .hd_left {
       display: flex;
@@ -48,6 +48,9 @@ body {
           font-size: 20px;
           font-weight: 400;
           gap: 50px;
+          li a:hover {
+            color: #b75a66;
+          }
         }
       }
     }
@@ -226,6 +229,105 @@ body {
           }
         }
       }
+    }
+
+    .up_btn {
+      position: fixed;
+      right: 100px;
+      bottom: 100px;
+      width: 60px;
+      height: 60px;
+      background: #b75a6686;
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  }
+
+  #product_face,
+  #product_eye {
+    padding: 100px 200px 0 200px;
+    text-align: center;
+    h2 {
+      font-size: 23px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    .product_nav {
+      margin-bottom: 60px;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        font-size: 18px;
+      }
+    }
+    .product_list {
+      margin-bottom: 180px;
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px;
+        li {
+          padding: 20px;
+          text-align: center;
+          cursor: pointer;
+          img {
+            width: 100%;
+            box-shadow: $imgShadow;
+            border-radius: 30px;
+            margin-bottom: 10px;
+          }
+          strong {
+            font-weight: 500;
+            margin: 10px 0;
+            display: block;
+          }
+          p {
+            font-weight: 300;
+            margin: 20px;
+          }
+          .best_tag {
+            padding: 7px;
+            border: 1px solid #b75a66;
+            color: #b75a66;
+          }
+          .winter_tag {
+            padding: 7px;
+            border: 1px solid #7dadd4;
+            color: #7dadd4;
+          }
+          .limit_tag {
+            padding: 7px;
+            border: 1px solid #eeb866;
+            color: #eeb866;
+          }
+        }
+      }
+    }
+    .up_btn {
+      position: fixed;
+      right: 100px;
+      bottom: 100px;
+      width: 60px;
+      height: 60px;
+      background: #b75a6686;
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      z-index: 1000;
     }
   }
 
