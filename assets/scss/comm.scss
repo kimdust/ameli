@@ -221,9 +221,21 @@ body {
         width: 100%;
         li {
           text-align: center;
-          img {
+          width: 100%;
+          .img_box {
             width: 100%;
-            margin-bottom: 10px;
+            height: 380px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              transition: transform 0.3s ease-in-out;
+              object-fit: cover;
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
           }
           strong {
             font-size: 20px;
@@ -271,6 +283,9 @@ body {
         justify-content: center;
         gap: 30px;
         font-size: 18px;
+        li a:hover {
+          color: #b75a66;
+        }
       }
     }
     .product_list {
@@ -344,6 +359,163 @@ body {
           font-weight: 500;
         }
       }
+    }
+    .up_btn {
+      position: fixed;
+      right: 100px;
+      bottom: 100px;
+      width: 60px;
+      height: 60px;
+      background: #b75a6686;
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  }
+
+  #makeup {
+    width: 100%;
+
+    .howtouse,
+    .newtonew,
+    .lookbook,
+    .article {
+      padding: 100px 200px 0 200px;
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 18px;
+        margin-bottom: 30px;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 20px;
+        li {
+          text-align: center;
+          width: 100%;
+          overflow: hidden;
+          .img_box {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            img {
+              width: 100%;
+              height: 100%;
+              transition: transform 0.3s ease-in-out;
+              object-fit: cover;
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
+          }
+          strong {
+            font-size: 20px;
+            font-weight: 500;
+          }
+        }
+      }
+      .more_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+          color: #b75a66;
+          border: 1px solid #b75a66;
+          border-radius: 6px;
+          padding: 10px 20px;
+        }
+      }
+    }
+
+    .article {
+      margin-bottom: 180px;
+    }
+
+    .up_btn {
+      position: fixed;
+      right: 100px;
+      bottom: 100px;
+      width: 60px;
+      height: 60px;
+      background: #b75a6686;
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  }
+
+  #heva {
+    width: 100%;
+    padding: 100px 200px 0 200px;
+    .persnal_color,
+    .ai_profile,
+    .vertual_makeup {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 100px;
+      .heva_txt {
+        width: 60%;
+        h3 {
+          font-size: 20px;
+          color: #b75a66;
+          font-weight: 700;
+          margin-top: 20px;
+        }
+        h2 {
+          font-size: 25px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 18px;
+          strong {
+            font-weight: 600;
+          }
+        }
+        span {
+          display: block;
+        }
+        button {
+          margin-top: 30px;
+          padding: 20px 0;
+          a {
+            width: 100%;
+            background-color: #b75a66;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+          }
+        }
+      }
+      .heva_img {
+        width: 40%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .vertual_makeup {
+      margin-bottom: 180px;
     }
     .up_btn {
       position: fixed;

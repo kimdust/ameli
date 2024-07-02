@@ -473,10 +473,23 @@ body {
 }
 .wrap #main .howtouse ul li {
   text-align: center;
-}
-.wrap #main .howtouse ul li img {
   width: 100%;
-  margin-bottom: 10px;
+}
+.wrap #main .howtouse ul li .img_box {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.wrap #main .howtouse ul li .img_box img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrap #main .howtouse ul li .img_box img:hover {
+  transform: scale(1.05);
 }
 .wrap #main .howtouse ul li strong {
   font-size: 20px;
@@ -533,6 +546,13 @@ body {
   justify-content: center;
   gap: 30px;
   font-size: 18px;
+}
+.wrap #product_face .product_nav ul li a:hover,
+.wrap #product_eye .product_nav ul li a:hover,
+.wrap #product_lip .product_nav ul li a:hover,
+.wrap #product_tool .product_nav ul li a:hover,
+.wrap #product_end .product_nav ul li a:hover {
+  color: #b75a66;
 }
 .wrap #product_face .product_list,
 .wrap #product_eye .product_list,
@@ -671,6 +691,210 @@ body {
 .wrap #product_lip .up_btn,
 .wrap #product_tool .up_btn,
 .wrap #product_end .up_btn {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  width: 60px;
+  height: 60px;
+  background: rgba(183, 90, 102, 0.5254901961);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+.wrap #makeup {
+  width: 100%;
+}
+.wrap #makeup .howtouse,
+.wrap #makeup .newtonew,
+.wrap #makeup .lookbook,
+.wrap #makeup .article {
+  padding: 100px 200px 0 200px;
+}
+.wrap #makeup .howtouse h2,
+.wrap #makeup .newtonew h2,
+.wrap #makeup .lookbook h2,
+.wrap #makeup .article h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.wrap #makeup .howtouse p,
+.wrap #makeup .newtonew p,
+.wrap #makeup .lookbook p,
+.wrap #makeup .article p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.wrap #makeup .howtouse ul,
+.wrap #makeup .newtonew ul,
+.wrap #makeup .lookbook ul,
+.wrap #makeup .article ul {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wrap #makeup .howtouse ul li,
+.wrap #makeup .newtonew ul li,
+.wrap #makeup .lookbook ul li,
+.wrap #makeup .article ul li {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+.wrap #makeup .howtouse ul li .img_box,
+.wrap #makeup .newtonew ul li .img_box,
+.wrap #makeup .lookbook ul li .img_box,
+.wrap #makeup .article ul li .img_box {
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.wrap #makeup .howtouse ul li .img_box img,
+.wrap #makeup .newtonew ul li .img_box img,
+.wrap #makeup .lookbook ul li .img_box img,
+.wrap #makeup .article ul li .img_box img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrap #makeup .howtouse ul li .img_box img:hover,
+.wrap #makeup .newtonew ul li .img_box img:hover,
+.wrap #makeup .lookbook ul li .img_box img:hover,
+.wrap #makeup .article ul li .img_box img:hover {
+  transform: scale(1.05);
+}
+.wrap #makeup .howtouse ul li strong,
+.wrap #makeup .newtonew ul li strong,
+.wrap #makeup .lookbook ul li strong,
+.wrap #makeup .article ul li strong {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wrap #makeup .howtouse .more_btn,
+.wrap #makeup .newtonew .more_btn,
+.wrap #makeup .lookbook .more_btn,
+.wrap #makeup .article .more_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap #makeup .howtouse .more_btn button,
+.wrap #makeup .newtonew .more_btn button,
+.wrap #makeup .lookbook .more_btn button,
+.wrap #makeup .article .more_btn button {
+  color: #b75a66;
+  border: 1px solid #b75a66;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+.wrap #makeup .article {
+  margin-bottom: 180px;
+}
+.wrap #makeup .up_btn {
+  position: fixed;
+  right: 100px;
+  bottom: 100px;
+  width: 60px;
+  height: 60px;
+  background: rgba(183, 90, 102, 0.5254901961);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+.wrap #heva {
+  width: 100%;
+  padding: 100px 200px 0 200px;
+}
+.wrap #heva .persnal_color,
+.wrap #heva .ai_profile,
+.wrap #heva .vertual_makeup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.wrap #heva .persnal_color .heva_txt,
+.wrap #heva .ai_profile .heva_txt,
+.wrap #heva .vertual_makeup .heva_txt {
+  width: 60%;
+}
+.wrap #heva .persnal_color .heva_txt h3,
+.wrap #heva .ai_profile .heva_txt h3,
+.wrap #heva .vertual_makeup .heva_txt h3 {
+  font-size: 20px;
+  color: #b75a66;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.wrap #heva .persnal_color .heva_txt h2,
+.wrap #heva .ai_profile .heva_txt h2,
+.wrap #heva .vertual_makeup .heva_txt h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.wrap #heva .persnal_color .heva_txt p,
+.wrap #heva .ai_profile .heva_txt p,
+.wrap #heva .vertual_makeup .heva_txt p {
+  font-size: 18px;
+}
+.wrap #heva .persnal_color .heva_txt p strong,
+.wrap #heva .ai_profile .heva_txt p strong,
+.wrap #heva .vertual_makeup .heva_txt p strong {
+  font-weight: 600;
+}
+.wrap #heva .persnal_color .heva_txt span,
+.wrap #heva .ai_profile .heva_txt span,
+.wrap #heva .vertual_makeup .heva_txt span {
+  display: block;
+}
+.wrap #heva .persnal_color .heva_txt button,
+.wrap #heva .ai_profile .heva_txt button,
+.wrap #heva .vertual_makeup .heva_txt button {
+  margin-top: 30px;
+  padding: 20px 0;
+}
+.wrap #heva .persnal_color .heva_txt button a,
+.wrap #heva .ai_profile .heva_txt button a,
+.wrap #heva .vertual_makeup .heva_txt button a {
+  width: 100%;
+  background-color: #b75a66;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+.wrap #heva .persnal_color .heva_img,
+.wrap #heva .ai_profile .heva_img,
+.wrap #heva .vertual_makeup .heva_img {
+  width: 40%;
+}
+.wrap #heva .persnal_color .heva_img img,
+.wrap #heva .ai_profile .heva_img img,
+.wrap #heva .vertual_makeup .heva_img img {
+  width: 100%;
+}
+.wrap #heva .vertual_makeup {
+  margin-bottom: 180px;
+}
+.wrap #heva .up_btn {
   position: fixed;
   right: 100px;
   bottom: 100px;
