@@ -430,10 +430,15 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1;
+  overflow: hidden;
 }
 .wrap #main .best .bestslide .swiper-wrapper .swiper-slide .img_box img {
   width: 100%;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.wrap #main .best .bestslide .swiper-wrapper .swiper-slide .img_box img:hover {
+  transform: scale(1.1);
 }
 .wrap #main .best .bestslide .swiper-wrapper .swiper-slide h4 {
   font-weight: 500;
@@ -581,15 +586,30 @@ body {
   text-align: center;
   cursor: pointer;
 }
-.wrap #product_face .product_list ul li img,
-.wrap #product_eye .product_list ul li img,
-.wrap #product_lip .product_list ul li img,
-.wrap #product_tool .product_list ul li img,
-.wrap #product_end .product_list ul li img {
-  width: 100%;
+.wrap #product_face .product_list ul li .img_box,
+.wrap #product_eye .product_list ul li .img_box,
+.wrap #product_lip .product_list ul li .img_box,
+.wrap #product_tool .product_list ul li .img_box,
+.wrap #product_end .product_list ul li .img_box {
+  overflow: hidden;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.199);
   border-radius: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.wrap #product_face .product_list ul li .img_box img,
+.wrap #product_eye .product_list ul li .img_box img,
+.wrap #product_lip .product_list ul li .img_box img,
+.wrap #product_tool .product_list ul li .img_box img,
+.wrap #product_end .product_list ul li .img_box img {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.wrap #product_face .product_list ul li .img_box img:hover,
+.wrap #product_eye .product_list ul li .img_box img:hover,
+.wrap #product_lip .product_list ul li .img_box img:hover,
+.wrap #product_tool .product_list ul li .img_box img:hover,
+.wrap #product_end .product_list ul li .img_box img:hover {
+  transform: scale(1.1);
 }
 .wrap #product_face .product_list ul li strong,
 .wrap #product_eye .product_list ul li strong,
@@ -880,6 +900,11 @@ body {
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
+}
+.wrap #heva .persnal_color .heva_txt button a:hover,
+.wrap #heva .ai_profile .heva_txt button a:hover,
+.wrap #heva .vertual_makeup .heva_txt button a:hover {
+  background-color: #953b47;
 }
 .wrap #heva .persnal_color .heva_img,
 .wrap #heva .ai_profile .heva_img,
