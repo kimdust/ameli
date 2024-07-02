@@ -13,6 +13,9 @@ var swiper = new Swiper(".bestslide", {
     721: {
       slidesPerView: 3.5,
     },
+    1221: {
+      slidesPerView: 6.3,
+    },
   },
 });
 
@@ -70,22 +73,22 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const tl = gsap.timeline({ defaults: { duration: 1, ease: "power2.out" } });
 
-  tl.from(".intro_first_line, .first_line_txt", {
+  tl.from(".mobile_intro .intro_first_line, .mobile_intro .first_line_txt", {
     opacity: 0,
     y: 50,
     stagger: 0.2,
   })
     .from(
-      ".intro_sec_line, .sec_line_txt",
+      ".mobile_intro .intro_sec_line, .mobile_intro .sec_line_txt",
       { opacity: 0, y: 50, stagger: 0.2 },
       "-=0.5"
     )
     .from(
-      ".intro_third_line, .third_line_txt",
+      ".mobile_intro .intro_third_line, .mobile_intro .third_line_txt",
       { opacity: 0, y: 50, stagger: 0.2 },
       "-=0.5"
     )
-    .from("#logo_img", { opacity: 0, y: 50 }, "-=0.1");
+    .from(".mobile_intro #logo_img", { opacity: 0, y: 50 }, "-=0.1");
 });
 
 document.addEventListener("DOMContentLoaded", function () {
