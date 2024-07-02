@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
+    />
+    <title>아멜리의 서랍 - 아멜리</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ameli 아멜리" />
+    <meta
+      property="og:description"
+      content="화장이 처음인 누군가에게도 메이크업 아티스트에게도 아멜리는 쉽습니다."
+    />
+    <meta property="og:image" content="./images/urlthumbnail.png" />
+    <meta property="og:url" content="https://kimdust.me/ameli" />
+
+    <link
+      rel="icon"
+      href="./images/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/comm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="assets/js/comm.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <div class="hd_left">
+          <h1 id="hd_title">
+            <a href="index.html">
+              <img src="./images/headernfooter/logo_black.png" alt="Ameli" />
+            </a>
+          </h1>
+          <div class="gnb">
+            <ul>
+              <li>
+                <a href="product_face.html" style="font-weight: 700">PRODUCT</a>
+              </li>
+              <li><a href="makeup.html">MAKEUP</a></li>
+              <li><a href="hava.html">HAVA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd_right">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="25"
+                  viewBox="0 0 18 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.16667 14.3333C11.8486 14.3333 14.8333 11.3486 14.8333 7.66667C14.8333 3.98477 11.8486 1 8.16667 1C4.48477 1 1.5 3.98477 1.5 7.66667C1.5 11.3486 4.48477 14.3333 8.16667 14.3333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.5001 16L12.9167 12.4167"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="27"
+                  height="29"
+                  viewBox="0 0 18 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 1L1.5 4.33333V16C1.5 16.442 1.67559 16.8659 1.98816 17.1785C2.30072 17.4911 2.72464 17.6667 3.16667 17.6667H14.8333C15.2754 17.6667 15.6993 17.4911 16.0118 17.1785C16.3244 16.8659 16.5 16.442 16.5 16V4.33333L14 1H4Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M1.5 4.33333H16.5"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12.3333 7.66666C12.3333 8.55071 11.9821 9.39856 11.357 10.0237C10.7319 10.6488 9.88401 11 8.99996 11C8.1159 11 7.26806 10.6488 6.64294 10.0237C6.01782 9.39856 5.66663 8.55071 5.66663 7.66666"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="28"
+                  height="26"
+                  viewBox="0 0 19 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.1667 10.1667C16.4083 8.95 17.6667 7.49167 17.6667 5.58333C17.6667 4.36776 17.1838 3.20197 16.3242 2.34243C15.4647 1.48289 14.2989 1 13.0833 1C11.6167 1 10.5833 1.41667 9.33333 2.66667C8.08333 1.41667 7.05 1 5.58333 1C4.36776 1 3.20197 1.48289 2.34243 2.34243C1.48289 3.20197 1 4.36776 1 5.58333C1 7.5 2.25 8.95833 3.5 10.1667L9.33333 16L15.1667 10.1667Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  width="24"
+                  height="27"
+                  viewBox="0 0 16 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.00004 9.83333C10.3012 9.83333 12.1667 7.96785 12.1667 5.66667C12.1667 3.36548 10.3012 1.5 8.00004 1.5C5.69885 1.5 3.83337 3.36548 3.83337 5.66667C3.83337 7.96785 5.69885 9.83333 8.00004 9.83333Z"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 16.5002C14.6667 14.7321 13.9643 13.0364 12.7141 11.7861C11.4638 10.5359 9.76815 9.8335 8.00004 9.8335C6.23193 9.8335 4.53624 10.5359 3.286 11.7861C2.03575 13.0364 1.33337 14.7321 1.33337 16.5002"
+                    stroke="black"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main id="product_end">
+        <h2>PRODUCT</h2>
+        <div class="product_nav">
+          <ul>
+            <li>
+              <a href="product_face.html">페이스</a>
+            </li>
+            <li>
+              <a href="product_eye.html">아이</a>
+            </li>
+            <li><a href="product_lip.html">서랍</a></li>
+            <li>
+              <a href="product_tool.html"> 메이크업 서랍 </a>
+            </li>
+            <li>
+              <a href="product_end.html" style="font-weight: 500">
+                아멜리의 서랍
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="product_list">
+          <div class="banner">
+            <img src="./images/product/end/banner.png" alt="아멜리의 서랍" />
+            <div class="banner_txt">
+              <p>
+                내 방 한켠,
+                <br />
+                <strong>나만의 소중함을 담은 자그마한 상자</strong>가 있나요?
+                <br />
+                <br />
+              </p>
+              <p>
+                부모님과 함께한 사진 한 장
+                <br />
+                "이건 사야해" 하며 충동 구매한 무언가
+                <br />
+                볼 때마다 뿌듯한 수집템들까지
+                <br />
+                <br />
+                아멜리에도 오랜 시간 곁에 있으며
+                <br />
+                아멜리만의 색깔을 표현한 추억의 컬러들이 있어요
+                <br />
+                <strong> 여기, 아멜리의 서랍에 넣어두었습니다 </strong>
+              </p>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <img src="./images/product/end/cushion_bboyan.png" alt="서랍" />
+              <strong>
+                내추럴 레이어링 쿠션 파운데이션
+                <br />
+                SPF50+, PA+++ 012 뽀얀
+              </strong>
+              <span>26,000원</span>
+              <p>
+                아멜리 쿠션 중에서 가장 화장한 티 나는 색
+                <br />
+                하이라이터처럼 자연스런 입체감
+              </p>
+              <div class="re_tag">예뻐져서 돌아올게요</div>
+            </li>
+            <li>
+              <img src="./images/product/end/cushion_hwasha.png" alt="서랍" />
+              <strong>
+                내추럴 레이어링 쿠션 파운데이션
+                <br />
+                SPF50+, PA+++ 019 화사
+              </strong>
+              <span>26,000원</span>
+              <p>
+                컬러 선택이 어렵다면 일단 화사
+                <br />
+                많이 밝지도 어둡지도 않은 중간계 베이지
+              </p>
+              <div class="re_tag">예뻐져서 돌아올게요</div>
+            </li>
+            <li>
+              <img src="./images/product/end/cushion_dana.png" alt="서랍" />
+              <strong>
+                내추럴 레이어링 쿠션 파운데이션
+                <br />
+                SPF50+, PA+++ 021 단아
+              </strong>
+              <span>26,000원</span>
+              <p>
+                분홍기 없이 착 가라앉아 깔끔하게 톤 정리
+                <br />
+                13호 피부톤도 쓸 수 있어요
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/concealer_white.png" alt="서랍" />
+              <strong>
+                프리핏인앤아웃컨실러
+                <br />
+                001 화이트
+              </strong>
+              <span>12,000원</span>
+              <p>
+                입체감 주고 싶은 콧날, 미간, 눈 아래
+                <br />
+                신경 쓰이는 그곳을 가장 화사하게
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/concealer_rozy.png" alt="서랍" />
+              <strong>
+                프리핏인앤아웃컨실러
+                <br />
+                004 로지
+              </strong>
+              <span>12,000원</span>
+              <p>
+                눈 옆에 바르면 눈가가 환해지는
+                <br />
+                모두에게 환한 휴대용 파데로도 굿
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/concealer_lilac.png" alt="서랍" />
+              <strong>
+                프리핏인앤아웃컨실러
+                <br />
+                006 라일락
+              </strong>
+              <span>12,000원</span>
+              <p>
+                블러셔 색이 원하는 만큼 나오지 않을 때
+                <br />
+                연한 보라 베이스, 코렉터가 필요할 때
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/sparklespot_orora.png"
+                alt="서랍"
+              />
+              <strong>
+                스파클스팟
+                <br />
+                510 오로라
+              </strong>
+              <span>19,000원</span>
+              <p>
+                알래스카 밤하늘의 신비로운 오로라
+                <br />
+                하나쯤은 있어야 할 보랏빛 펄
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/bibid_mint.png" alt="서랍" />
+              <strong>
+                비비드밤
+                <br />
+                401 꼬끄민트
+              </strong>
+              <span>22,000원</span>
+              <p>
+                아그작 달달 민트 마카롱
+                <br />
+                페스티벌 하이패션 컬러
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/bibid_littlemos.png" alt="서랍" />
+              <strong>
+                비비드밤
+                <br />
+                402 리틀모스
+              </strong>
+              <span>22,000원</span>
+              <p>
+                이끼 중에서도 막 돋아난 어린 이끼
+                <br />
+                겨자색 완두콩색 이파리색
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/bibid_yellow.png" alt="서랍" />
+              <strong>
+                비비드밤
+                <br />
+                403 시트러스옐로
+              </strong>
+              <span>22,000원</span>
+              <p>
+                신맛 나는 레몬에 우유 한 방울
+                <br />
+                다른 컬러와 활용도 굿
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/bibid_chuingpink.png" alt="서랍" />
+              <strong>
+                비비드밤
+                <br />
+                405 츄잉핑크
+              </strong>
+              <span>22,000원</span>
+              <p>
+                베리베리 츄잉 젤리
+                <br />
+                딸기맛 핑크풍선껌
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/bibid_parotblue.png" alt="서랍" />
+              <strong>
+                비비드밤
+                <br />
+                406 패롯블루
+              </strong>
+              <span>22,000원</span>
+              <p>
+                열대 앵무새의 트로피칼 블루
+                <br />
+                골드나 실버와 이어보세요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/astrallight_tropical.png"
+                alt="서랍"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                001 트로피컬플루터
+              </strong>
+              <span>39,000원</span>
+              <p>
+                네온사인이 켜진 열대과일
+                <br />
+                움직이면 레이저빔이 파밧
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/astrallight_vanitycopper.png"
+                alt="서랍"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                002 베니티코퍼
+              </strong>
+              <span>39,000원</span>
+              <p>
+                굉장히 화려하고 뻔뻔한 구리빛
+                <br />
+                화려한 반짝임 공허한 시선
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/astrallight_piterpatred.png"
+                alt="서랍"
+              />
+              <strong>
+                아스트랄라이트
+                <br />
+                003 피터팻레드
+              </strong>
+              <span>39,000원</span>
+              <p>
+                진정 불가의 수상한 빨강
+                <br />
+                극도의 흥분 글리터
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/airlips_scarlet.png" alt="서랍" />
+              <strong>
+                에어립스
+                <br />
+                805 스칼렛
+              </strong>
+              <span>17,000원</span>
+              <p>
+                보송한 타입의 에어립스
+                <br />
+                하나쯤은 꼭 있어야 할 깨끗한 레드
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/airlips_sistar.png" alt="서랍" />
+              <strong>
+                에어립스
+                <br />
+                819 씨스타
+              </strong>
+              <span>17,000원</span>
+              <p>
+                보송한 타입의 에어립스
+                <br />
+                시크한 언니의 자줏빛 입술
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/airlips_peachburt.png"
+                alt="서랍"
+              />
+              <strong>
+                에어립스
+                <br />
+                826 피치버트
+              </strong>
+              <span>17,000원</span>
+              <p>
+                보송한 타입의 에어립스
+                <br />
+                탐스러운 복숭아 엉덩이 끄트머리
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/airlips_tintedbongbong.png"
+                alt="서랍"
+              />
+              <strong>
+                에어립스
+                <br />
+                829 틴티드봉봉
+              </strong>
+              <span>17,000원</span>
+              <p>
+                보송한 타입의 에어립스
+                <br />
+                작정하고 주목받고 싶은 날 선택하세요
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/fletlips_naturalbaige.png"
+                alt="서랍"
+              />
+              <strong>
+                플랫립스
+                <br />
+                901 내추럴베이지
+              </strong>
+              <span>16,000원</span>
+              <p>
+                쫀촉한 타입의 플랫립스
+                <br />
+                무심한 듯 시크한 파리지엔 입술
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/fletlips_pinkbarbie.png"
+                alt="서랍"
+              />
+              <strong>
+                플랫립스
+                <br />
+                902 핑크바비
+              </strong>
+              <span>16,000원</span>
+              <p>
+                쫀촉한 타입의 플랫립스
+                <br />
+                의도된 인위적 뽀얀 핑크
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/fletlips_mangotint.png"
+                alt="서랍"
+              />
+              <strong>
+                플랫립스
+                <br />
+                904 망고틴트
+              </strong>
+              <span>16,000원</span>
+              <p>
+                쫀촉한 타입의 플랫립스
+                <br />
+                실패한 립컬러에 섞으면 좋은 되살려템
+              </p>
+            </li>
+            <li>
+              <img
+                src="./images/product/end/fletlips_mingming.png"
+                alt="서랍"
+              />
+              <strong>
+                플랫립스
+                <br />
+                924 밍밍
+              </strong>
+              <span>16,000원</span>
+              <p>
+                쫀촉한 타입의 플랫립스
+                <br />
+                강렬한 붉은빛 속 오묘한 자주
+              </p>
+            </li>
+
+            <li>
+              <img src="./images/product/end/nar_bamptint.png" alt="서랍" />
+              <strong>
+                나르시시즘 립 틴트
+                <br />
+                714 뱀프틴트
+              </strong>
+              <span>20,000원</span>
+              <p>
+                딱지 진 피 빨강에 모브 한 방울
+                <br />
+                레전드 피 빨강
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/nar_cheerytin.png" alt="서랍" />
+              <strong>
+                나르시시즘 립 틴트
+                <br />
+                718 체리틴
+              </strong>
+              <span>20,000원</span>
+              <p>
+                형광기가 싹 빠져
+                <br />
+                한 단계 차분해진 맑은 체리레드
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/nar_roseatnight.png" alt="서랍" />
+              <strong>
+                나르시시즘 립 틴트
+                <br />
+                720 로즈앳나잇
+              </strong>
+              <span>20,000원</span>
+              <p>
+                누군가에겐 웜에 가까운 브릭
+                <br />
+                또 누군가에게는 쿨 로즈
+              </p>
+            </li>
+            <li>
+              <img src="./images/product/end/nar_taninlove.png" alt="서랍" />
+              <strong>
+                나르시시즘 립 틴트
+                <br />
+                736 타닌러브
+              </strong>
+              <span>20,000원</span>
+              <p>
+                칙칙한 검은색을 섞지 않은
+                <br />
+                진짜 맑은 와인색
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="up_btn">
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="ft_left">
+          <p><strong>주식회사 아멜리글로벌</strong></p>
+          <p><strong>대표자</strong> 권유미</p>
+          <p><strong>개인정보관리</strong> 이한나</p>
+          <p><strong>사업자등록번호</strong> 487-88-01427</p>
+          <p><strong>통신판매업번호</strong> 제 2019-서울강남-04775 호</p>
+          <p><strong>INQUIRY</strong> biz@ameli.co.kr</p>
+          <p><br /></p>
+          <p>
+            서울특별시 강남구 테헤란로20길 18 부봉빌딩 6층 | 1533-8835
+            (02-566-7889)
+          </p>
+        </div>
+        <div class="ft_right">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/ameli_official_kr/">
+                <img
+                  src="./images/headernfooter/instagram.png"
+                  alt="인스타그램"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://blog.naver.com/ameli__">
+                <img src="./images/headernfooter/blog.png" alt="블로그" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/ameli.cosmetic/">
+                <img src="./images/headernfooter/facebook.png" alt="페이스북" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
